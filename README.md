@@ -3,6 +3,7 @@
 ### IUT Montpellier-Sète – Département Informatique
 
 * **Enseignants:** [Hoang La](mailto:xuan-hoang.la@umontpellier.fr), [Clément Agret](mailto:agret@lirmm.fr)
+* Le [forum Piazza](https://piazza.com/class/jzs4o7je7zm1a0) de ce cours pour poser vos questions
 
 # Projet - _CONQUEST_
 
