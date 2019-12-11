@@ -28,6 +28,7 @@ class GameTest {
         ByteArrayInputStream inputStream = new ByteArrayInputStream(input.getBytes());
         Game.initInput(inputStream);
     }
+
     @Disabled
     @Test
     void if_player2_has_no_pawn_left_then_the_game_should_be_finished_and_player1_should_win() {

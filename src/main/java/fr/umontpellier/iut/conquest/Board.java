@@ -1,6 +1,5 @@
 package fr.umontpellier.iut.conquest;
 
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -14,6 +13,7 @@ public class Board {
 
     /**
      * Constructeur.
+     *
      * @param size : la taille du plateau.
      */
     public Board(int size) {
@@ -22,6 +22,7 @@ public class Board {
 
     /**
      * Constructeur pour Test.
+     *
      * @param field : plateau prédéfini.
      */
     public Board(Pawn[][] field) {

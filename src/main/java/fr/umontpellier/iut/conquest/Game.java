@@ -87,7 +87,7 @@ public class Game {
             System.out.println(board);
 
             // Demande au joueur courant de joueur.
-            if(!board.getValidMoves(player).isEmpty()){
+            if (!board.getValidMoves(player).isEmpty()) {
                 board.movePawn(player.play());
             }
 
@@ -140,7 +140,7 @@ public class Game {
 
     /**
      * Demande au joueur s'il veut annuler (ou pas) un ou plusieurs coups.
-     *
+     * <p>
      * Tant que le joueur player le désire et que l'on n'est pas revenu au début de la partie en cours,
      * propose à player de reculer d'un coup en faisant saisir 1, ou 0 sinon.
      * Cette méthode doit donc modifier l'état de l'attribut board.
