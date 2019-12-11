@@ -1,0 +1,41 @@
+@startuml
+
+title Relationships - Class Diagram
+
+
+class fr.umontpellier.iut.conquest.Board {
+  +tableau:Pion[][]
+  +getCoupValide(Pion)
+}
+
+class fr.umontpellier.iut.conquest.Game {
+    +joueurCourant
+    +run()
+    +executerCoup()
+}
+
+class fr.umontpellier.iut.conquest.Player {
+    +getPions()
+    +getCoups()
+    +setStrat(S)
+}
+
+class Pion {
+    +int x
+    +int y
+    +getPlayer()
+}
+ 
+class Strategie {
+    +getCoup()
+}
+
+fr.umontpellier.iut.conquest.Game -right-> "2" fr.umontpellier.iut.conquest.Player
+fr.umontpellier.iut.conquest.Game-down-> "1" fr.umontpellier.iut.conquest.Board
+Pion "*" -up- "P1" fr.umontpellier.iut.conquest.Player: mesPions
+Pion "*" <-right-  fr.umontpellier.iut.conquest.Board
+fr.umontpellier.iut.conquest.Player -right-> "1" Strategie
+
+
+
+@enduml
