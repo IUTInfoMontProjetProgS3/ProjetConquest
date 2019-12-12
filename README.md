@@ -23,7 +23,7 @@ Le plateau est de taille impaire n. Chaque joueur commence avec 2 pions qui se t
 Le jeu se joue tour par tour. À chaque tour, un joueur a le choix entre :
 - Déplacer un pion à distance 1 (diagonales autorisées, par exemple (0,0) &rightarrow; (1,1) est ok) : dans ce cas le pion se duplique pour remplir la case d'arrivée et la case de départ.
 - Déplacer un pion à distance 2 (par exemple (0,0) &rightarrow; (2,2) et (0,0) &rightarrow; (2,1) sont ok) : dans ce cas le pion ne se duplique pas (la case de départ est maintenant vide et la case d'arrivée remplie). 
-- S'il ne peut déplacer aucun pion, il passe son tour (il joue un coup null).
+- S'il ne peut déplacer aucun pion, il passe son tour.
 
 Dans tous les cas, la case d'arrivée doit être initialement vide. Une fois qu'un pion *p* y est déplacé, tous les pions se trouvant dans les cases à distance 1 de cette case d'arrivée prennent la couleur de *p*.
 Quand un joueur n'a plus de pions ou quand le plateau est rempli, la partie est finie et celui qui possède le plus de pions gagne la partie.
